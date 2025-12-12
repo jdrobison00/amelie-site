@@ -1,0 +1,94 @@
+/* 
+Dark Vanilla: #d3cba7
+Sangria: #9c040b
+Dark Puce: #502c3b
+Field Drab: #6b5917
+Pink: #d97e8a
+off white: #f8f4ef
+near black: #0f0b0d*/
+
+@font-face {
+    font-family: 'JaneAusten';
+    src: url('fonts/JaneAusten.woff2') format('woff2'),
+        url('fonts/JaneAusten.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oranienbaum';
+    src: url('fonts/Oranienbaum.woff2') format('woff2'),
+        url('fonts/Oranienbaum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f4ef;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
+    width: 95vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #9c040b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8em;
+    padding:  1em;
+    font-size: 1.25rem;
+    box-shadow: 0px 3px 5px #0f0b0d;
+}
+
+.nav {
+    width: 100%;
+    justify-content: space-around;
+    font-family: 'Oranienbaum', serif;
+    letter-spacing: 0.05em;
+}
+
+.nav a {
+    color: #f8f4ef;
+}
+
+.nav a:hover {
+    color: #d3cba7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 1em 0.2em;
+    font-size: 2.5rem;
+    font-family: 'JaneAusten', serif;
+    color: #0f0b0d;
+}
