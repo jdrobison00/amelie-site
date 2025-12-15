@@ -97,7 +97,7 @@ main {
 h1 {
     margin: 1em 0.2em;
     font-size: 2.5rem;
-    font-family: 'JaneAusten', serif;
+    font-family: 'JaneAusten', sans-serif;
     color: #0f0b0d;
 }
 
@@ -136,15 +136,49 @@ h1 {
 #home-topleft-images .sticky {
     width: 59%;
     aspect-ratio: 1;
-    background-color: #d97e8a;
+    background-color: #d3cba7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: flex-start;
     position: relative;
     top: -18%;
 }
 
-#home-topleft p {
-    width: 55%;
+.sticky ul {
+    flex-direction: column;
+    list-style-type: "☆";
+    font-family: 'JaneAusten', sans-serif;
+    padding: 0 4rem;
+    font-size: 1.6rem;
+    color:#0f0b0d;
+    justify-content: center;
+}
+
+#home-topleft .button-container {
+    width: 100%;
     flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-topleft button {
+    font-size: 1.4rem;
+    color: #0f0b0d;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1.2rem 0.6rem 1.2rem;
+    background-color: #d97e8a;
+    border: 0;
+    border-radius: 0;
+}
+
+button span {
+    margin-left: 0.6rem;
+
 }
 
 #home-topright {
@@ -156,6 +190,23 @@ h1 {
 
 #home-topright img {
     width: 100%;
+}
+
+#home-topright button {
+    font-size: 1.4rem;
+    color: #f8f4ef;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1.2rem 0.6rem 1.2rem;
+    background-color: #9c040b;
+    border: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    transform: rotate(-11deg);
 }
 
 #home-paste-image1 {
@@ -176,22 +227,67 @@ h1 {
 #home-bottom {
     width: 100%;
     flex: 1;
-    display: flex;
     margin-top: 2rem;
+    position: relative;
 }
 
 #home-bottom .img-container {
-    flex: 1;
+    width: 33%;
     margin-right: 2rem;
 }
 
 
-#home-bottom p {
-    margin-top: 10rem;
+#home-bottom .button-container {
+    position: absolute;
     flex: 2;
+    top: 30%;
+    left: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home-bottom button {
+    font-size: 1.4rem;
+    color: #f8f4ef;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1.2rem 0.6rem 1.2rem;
+    border: 0px;
+    background-color: #6b5917;
+}
+
+.bottom-container {
+    position: relative;
+    width: 100%;
+}
+
+.bottom-container .button-container {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-pic {
-    margin-top: 2rem;
+    position: relative;
+    margin-top: 1rem;
     width: 100%;
+}
+
+.bottom-container button {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #f8f4ef;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1.2rem 0.6rem 1.2rem;
+    background-color: #502c3b;
+    border:0;
 }
