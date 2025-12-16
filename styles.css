@@ -1,11 +1,10 @@
 /* 
-Dark Vanilla: #d3cba7
-Sangria: #9c040b
-Dark Puce: #502c3b
-Field Drab: #6b5917
-Pink: #d97e8a
-off white: #f8f4ef
-near black: #0f0b0d*/
+TODO:
+standardize widths and positions for collage layout-- don't worry about mobile specific yet.
+organize css and html classes
+hover functionality
+more stylization 
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
@@ -18,13 +17,23 @@ near black: #0f0b0d*/
     font-display: swap;
 }
 
+:root {
+    --off-white: #f8f4ef;
+    --near-black: #0f0b0d;
+    --sangria: #9c040b;
+    --plum: #502c3b;
+    --pink: #d97e8a;
+    --dark-vanilla: #d3cba7;
+    --field-drab: #6b5917;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    background-color: #f8f4ef;
+    background-color: var(--off-white);
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
@@ -64,7 +73,6 @@ header {
     margin-top: 0.8em;
     padding:  1em;
     font-size: 1.4rem;
-    /*box-shadow: 0px 3px 5px #0f0b0d;*/
 }
 
 .nav {
@@ -75,17 +83,13 @@ header {
 }
 
 .nav a {
-    color: #0f0b0d;
-}
-
-.nav a:hover {
-    
+    color: var(--near-black);
 }
 
 #top-separator {
     width: 105%;
     margin-top: 1rem;
-    border-top: 1px solid #9c040b;
+    border-top: 1px solid var(--sangria);
 }
 
 main {
@@ -98,7 +102,7 @@ h1 {
     margin: 1em 0.2em;
     font-size: 2.5rem;
     font-family: 'JaneAusten', sans-serif;
-    color: #0f0b0d;
+    color: var(--near-black);
 }
 
 #home-collage {
@@ -136,7 +140,7 @@ h1 {
 #home-topleft-images .sticky {
     width: 59%;
     aspect-ratio: 1;
-    background-color: #d3cba7;
+    background-color: var(--dark-vanilla);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +155,7 @@ h1 {
     font-family: 'JaneAusten', sans-serif;
     padding: 0 4rem;
     font-size: 1.6rem;
-    color:#0f0b0d;
+    color: var(--near-black);
     justify-content: center;
 }
 
@@ -165,13 +169,13 @@ h1 {
 
 #home-topleft button {
     font-size: 1.4rem;
-    color: #0f0b0d;
+    color: var(--near-black);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     display: flex;
     justify-content: center;
     padding: 0.8rem 1.2rem 0.6rem 1.2rem;
-    background-color: #d97e8a;
+    background-color: var(--pink);
     border: 0;
     border-radius: 0;
 }
@@ -194,13 +198,13 @@ button span {
 
 #home-topright button {
     font-size: 1.4rem;
-    color: #f8f4ef;
+    color: var(--off-white);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     display: flex;
     justify-content: center;
     padding: 0.8rem 1.2rem 0.6rem 1.2rem;
-    background-color: #9c040b;
+    background-color: var(--sangria);
     border: 0;
     border-radius: 0;
     position: absolute;
@@ -248,14 +252,14 @@ button span {
 }
 #home-bottom button {
     font-size: 1.4rem;
-    color: #f8f4ef;
+    color: var(--off-white);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     display: flex;
     justify-content: center;
     padding: 0.8rem 1.2rem 0.6rem 1.2rem;
     border: 0px;
-    background-color: #6b5917;
+    background-color: var(--field-drab);
 }
 
 .bottom-container {
@@ -282,12 +286,12 @@ button span {
 .bottom-container button {
     margin: 1rem 0;
     font-size: 1.4rem;
-    color: #f8f4ef;
+    color: var(--off-white);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     display: flex;
     justify-content: center;
     padding: 0.8rem 1.2rem 0.6rem 1.2rem;
-    background-color: #502c3b;
+    background-color: var(--plum);
     border:0;
 }
