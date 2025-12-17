@@ -41,7 +41,7 @@ body {
     align-items: center;
 
     min-width: 600px; /* remove later for mobile */
-    margin: 2rem; 
+    margin: 0 2rem; 
 }
 
 img {
@@ -58,8 +58,14 @@ ul {
     list-style-type: none;
 }
 
+ul img {
+    width: 2rem;
+    margin: 0.5rem;
+}
+
 main, 
-header {
+header, 
+footer {
     width: 100%;
     max-width: 1050px;
 }
@@ -136,8 +142,20 @@ h1 {
 }
 
 header {
-    margin-top: 0.8em;
+    margin-top: 1rem;
+}
+
+header, 
+footer {
     padding:  1em;
+}
+
+footer {
+    border-top: 1px
+}
+
+footer ul {
+
 }
 
 .nav {
@@ -155,7 +173,13 @@ header {
 .top-separator {
     width: 105%;
     margin-top: 1rem;
-    border-top: 1px solid var(--sangria);
+    border-top: 2px solid var(--sangria);
+}
+
+.bottom-separator {
+    width: 105%;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--field-drab);
 }
 
 .home-collage {
