@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <ul class="nav">
+    <header class="center flex col">
+        <ul class="flex nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -16,18 +16,18 @@
             <li><a href="attribution.html">Attribution</a></li>
             <li><a href="https://amelieeee.substack.com">Substack</a></li>
         </ul>
-        <div id="top-separator"></div>
+        <div class="top-separator"></div>
     </header>
     <main>
         <h1>Amelie Brooks-Hochheimer</h1>
-        <div id="home-collage">
-            <div id="home-top">
-                <div id="home-topleft">
-                    <div id="home-topleft-images">
+        <div class="home-collage flex col">
+            <div class="home-top flex">
+                <div class="home-topleft flex col">
+                    <div class="home-topleft-images flex col">
                         <img src="pictures/homepage-4.jpg" alt="Amelie and Pinky stand outside together,
                         excitedly addressing an unseen crowd. Amelie is wearing a long, black velvet 
                         dress, and pinky is wearing a short, dark green dress with a beige fur trim coat.">
-                        <div class="sticky">
+                        <div class="sticky flex center">
                             <ul>
                                 <li>Writer</li>
                                 <li>Producer</li>
@@ -35,37 +35,35 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="button-container">
-                        <a href="about.html"><button>about me <span>↬</span></button></a>
+                    <div class="button-container flex center">
+                        <a href="about.html" class="btn btn--pink">about me <span>↬</span></a>
                     </div>
                 </div>
-                <div id="home-topright">
-                    <a href="https://instagram.com/fatbitchmediallc"><button>Fat Bitch Media <span>↬</span></button></a>
+                <div class="home-topright">
+                    <a href="https://instagram.com/fatbitchmediallc" class="btn btn--sangria">Fat Bitch Media <span>↬</span></a>
                     <img src="pictures/homepage-2.jpg" alt="A candid photo of Amelie with 
                         Pinky and cast members at a showing of her play, Gathering.">
-                    <div id="home-paste-image1">
+                    <div class="home-paste-imageleft">
                         <img src="pictures/homepage-6.jpg" alt="Amelie talks with friends at a 
                         writing workshop.">
                     </div>
-                    <div id="home-paste-image2">
+                    <div class="home-paste-imageright">
                         <img src="pictures/homepage-3.jpg" alt="Amelie exhales from a vape while
                         looking at a collaborator's phone.">
                     </div>
                 </div>
             </div>
-            <div id="home-bottom">
+            <div class="home-bottom flex">
                 <div class="img-container">
                     <img src="pictures/homepage-5.jpg" alt="Two actors from Amelie's play, Gathering,
                     crouch in the middle of a scene.">
                 </div>
-                <div class="button-container"><a href="portfolio.html">
-                    <button>see my work <span>↬</span></button>
-                </a></div>
+                <div class="button-container flex center"><a href="portfolio.html" class="btn btn--field">see my work <span>↬</span></a></div>
             </div>
         </div>
         <div class="bottom-container">
-            <div class="button-container">
-                <a href="contact.html"><button>contact me <span>↬</span></button></a>
+            <div class="button-container flex center">
+                <a href="contact.html" class="btn btn--plum">contact me <span>↬</span></a>
             </div>
             <img class="bottom-pic" src="pictures/homepage-1.JPG" alt="Amelie wears an orange
             tank top and stands center frame, smiling at the viewer. Her collaborators 
