@@ -70,12 +70,6 @@ footer {
     max-width: 1050px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .flex {
     display: flex;
 }
@@ -139,6 +133,16 @@ h1 {
     font-size: 2.5rem;
     font-family: 'JaneAusten', sans-serif;
     color: var(--near-black);
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'JaneAusten', sans-serif;
+    color: var(--near-black);
+    margin: 1em 0.2em;
+    text-align: center;
+    font-weight: normal;
 }
 
 header {
@@ -152,10 +156,6 @@ footer {
 
 footer {
     border-top: 1px
-}
-
-footer ul {
-
 }
 
 .nav {
@@ -291,3 +291,50 @@ footer ul {
     width: 100%;
 }
 
+/*About Page*/
+
+.about-left {
+    align-items: center;
+    padding: 0 1.2rem;
+    flex: 2;
+}
+
+.about-left .img-container {
+    padding: 1rem 0.6rem 1.2rem 0.2rem;
+}
+
+.about-left img {
+   border-radius: 18px;
+}
+
+.about-right {
+    min-width: 320px;
+    padding: 0 1.2rem;
+    flex: 1;
+}
+
+.about-left.sect {
+    border: 5px double var(--pink);
+}
+
+.sect + .sect {
+    border: 5px double var(--dark-vanilla);
+}
+
+.about-right .sect:first-child {
+    border: 5px double var(--plum);
+}
+
+.sect p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.sect + .sect {
+    margin-top: 1rem;
+}
+
+.para-start {
+    font-size: 1.5rem;
+    font-family: 'JaneAusten', sans-serif;
+    margin-right: 0.5ch;
+}
